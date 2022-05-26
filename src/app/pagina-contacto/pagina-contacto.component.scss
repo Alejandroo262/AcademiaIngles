@@ -1,0 +1,65 @@
+body {
+    margin: 10px;
+    padding: 10px;
+}
+
+.descripcion {
+    text-align: justify;
+    margin: 2rem;
+    margin-bottom: 5rem;
+}
+
+.formulario {
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-left: 4rem;
+    width: 30%;
+    padding: 1em;
+    border: 1px solid #cccccc;
+    border-radius: 1em;
+
+    input {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        padding: 0.5rem;
+        box-sizing: border-box;
+        border: 1px solid #cccccc;
+        border-radius: 1em;
+
+        #description {
+            padding-bottom: 5rem;
+        }
+    }
+
+    button {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        display: block;
+        padding: 0.3rem;
+        box-sizing: border-box;
+        color: rgb(255, 255, 255);
+        border: 1px solid #cccccc;
+        background-color: #0c0d0d;
+        border-radius: 1em;
+    }
+
+    button:hover {
+        cursor: pointer;
+        padding: 0.35rem;
+        color: #0c0d0d;
+        background-color: rgb(255, 255, 255);
+    }
+  }
+
+.mapouter{
+    margin: 0 auto;
+    margin-right: 4rem;
+    margin-top: 0px;
+}
+
+.datos  {
+    display: flex;
+    margin-bottom: 10%;
+}
