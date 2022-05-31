@@ -5,6 +5,7 @@ import { PaginaContactoComponent } from './pagina-contacto/pagina-contacto.compo
 import { PreciosCursosComponent } from './precios-cursos/precios-cursos.component';
 
 const routes: Routes = [
+  {path: '', component: PantallaInicialComponent},
   {path: 'pantalla-inicial', component: PantallaInicialComponent},
   {path: 'pagina-contacto', component: PaginaContactoComponent},
   {path: 'pagina-precios', component: PreciosCursosComponent}
