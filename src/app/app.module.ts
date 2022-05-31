@@ -7,6 +7,7 @@ import { PantallaInicialComponent } from './pantalla-inicial/pantalla-inicial.co
 import { MenuComponent } from './componentes/menu/menu.component';
 import { PaginaContactoComponent } from './pagina-contacto/pagina-contacto.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { PreciosCursosComponent } from './precios-cursos/precios-cursos.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './componentes/footer/footer.component';
     PantallaInicialComponent,
     MenuComponent,
     PaginaContactoComponent,
-    FooterComponent
+    FooterComponent,
+    PreciosCursosComponent
   ],
   imports: [
     BrowserModule,
