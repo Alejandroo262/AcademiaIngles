@@ -7,13 +7,12 @@
 
 <div class="datos">
     <div class="formulario">
-        <form action="#">
+        <form [formGroup]="form" (submit)="enviarData()" action="#" method="post">
             <label for="user"></label>
-            <input type="text" name="user" id="user" placeholder="Nombre.."/>
+            <input formControlName="nombre" type="text" name="user" id="user" placeholder="Nombre.."/>
             <label for="email"></label>
-            <input type="email" name="email" id="email" placeholder="Email..."/>
-            <label for="description"></label>
-            <input type="text" name="description" id="description" placeholder="Mensaje..."/>
+            <input formControlName="email" type="email" name="email" id="email" placeholder="Email..."/>
+            <textarea formControlName="mensaje" placeholder="Escribe el mensaje..." name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
             <button>Enviar</button>
         </form>
     </div>

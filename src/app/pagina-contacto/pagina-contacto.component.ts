@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder,FormGroup, Validators } from '@angular/forms';
+import { RestService } from '../services/rest.service';
 
 @Component({
   selector: 'app-pagina-contacto',
@@ -7,9 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaginaContactoComponent implements OnInit {
 
-  constructor() { }
+  public form: FormGroup | any;
+
+  constructor(private rest: RestService, private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
+    this.form = this.formBuilder.group({
+      nombre: [''],
+      email: [''],
+      mensaje: [''],
+    });
+  }
+
+  public enviarData() {
+    this.rest.post(`http://localhost:8000/api/visitante`,
+    {
+      text: this.form.value.mensaje
+    }
+    //this.form.value;
+    )
+    .subscribe(respuesta => {
+      console.log('Datos del formulario enviado');
+    })
   }
 
 }

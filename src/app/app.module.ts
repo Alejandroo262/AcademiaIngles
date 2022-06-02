@@ -8,6 +8,8 @@ import { MenuComponent } from './componentes/menu/menu.component';
 import { PaginaContactoComponent } from './pagina-contacto/pagina-contacto.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { PreciosCursosComponent } from './precios-cursos/precios-cursos.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PreciosCursosComponent } from './precios-cursos/precios-cursos.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
