@@ -10,16 +10,19 @@
     </p>
 </div>
 
-<div *ngIf="mostrarCurso; then muestraCurso; else noCurso"></div>
+<div *ngIf="isMostrarCurso; then muestraCurso; else noCurso"></div>
 <div *ngFor = "let user of users">
-    <p> El usuario que tienen permisos son : {{users}}</p>
+    <p> El usuario que tienen permisos es : {{users}}</p>
 </div>
 
 <ng-template #muestraCurso>
     <p>
         Tienes permiso para todos los cursos 
     </p>
-<div id="container">
+
+<button (click)="togglePrecios()">{{btnTextPrecios}}</button>
+
+<div id="container" *ngIf="isMostrarPrecios">
 
     <div id="curso1">
     <p>

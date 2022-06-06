@@ -7,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PreciosCursosComponent implements OnInit {
 
-  public mostrarCurso: boolean = true
-  public users: string []=[] 
+  public isMostrarCurso: boolean = true;
+  public users: string []=[] ;
+  public isMostrarPrecios: boolean = false;
+  public btnTextPrecios: string = "" ;
+  private textPreciosShow: string = "Mostrar Precios Cursos"
+  private textPreciosHide: string = "Ocultar Precios Cursos"
 
   constructor() { 
     this.users = ["Fran", "Santiago", "Alejandro"]
@@ -21,8 +25,22 @@ export class PreciosCursosComponent implements OnInit {
     console.log('usuarios', this.users)
   }
 
+  public togglePrecios():void{
+    this.isMostrarPrecios = !this.isMostrarPrecios;
+    this.checkPrecios()
+  }
+
+  private checkPrecios(): void{
+    if(this.isMostrarPrecios){
+      this.btnTextPrecios = this.textPreciosHide
+    }else{
+      this.btnTextPrecios = this.textPreciosShow
+    }
+  }
+
   ngOnInit(): void {
     this.randomUsers()
+    this.checkPrecios()
   }
 
 }
