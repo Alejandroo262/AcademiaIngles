@@ -17,6 +17,7 @@ body {
     padding: 1em;
     border: 1px solid #cccccc;
     border-radius: 1em;
+    display: block;
 
     input {
         margin-top: 1rem;
@@ -40,7 +41,8 @@ body {
     button {
         margin-top: 2rem;
         margin-bottom: 1rem;
-        width: 100%;
+        margin-left: 25%;
+        width: 50%;
         display: block;
         padding: 0.3rem;
         box-sizing: border-box;
@@ -56,15 +58,51 @@ body {
         color: #0c0d0d;
         background-color: rgb(255, 255, 255);
     }
-  }
+}
 
-.mapouter{
-    margin: 0 auto;
-    margin-right: 4rem;
-    margin-top: 0px;
+// .mapouter{
+//     position:relative;
+//     text-align:right;
+//     height:500px;
+//     width:600px;
+// }
+
+// .gmap_canvas {overflow:hidden;
+//     background:none!important;
+//     height:500px;
+//     width:600px;
+// }
+
+.contacto {
+    margin-right: 5rem;
 }
 
 .datos  {
     display: flex;
     margin-bottom: 10%;
+}
+
+@media (max-width: 1220px) {
+    .datos {
+        flex-direction: column;
+    }
+
+    .formulario {
+        width: 40%;
+        margin-left: 27%;
+    }
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .gmap_canvas {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
 }

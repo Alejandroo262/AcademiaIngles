@@ -24,7 +24,9 @@ export class PaginaContactoComponent implements OnInit {
   public enviarData() {
     this.rest.post(`http://localhost:8000/api/visitante`,
     {
-      text: this.form.value.mensaje
+      nombre: this.form.value.nombre,
+      email: this.form.value.email,
+      mensaje: this.form.value.mensaje,
     }
     //this.form.value;
     )
