@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PreciosCursosComponent implements OnInit {
 
-  constructor() { }
+  public mostrarCurso: boolean = true
+  public users: string []=[] 
+
+  constructor() { 
+    this.users = ["Fran", "Santiago", "Alejandro"]
+  }
+
+  public randomUsers():void{
+    const randomUser = Math.floor(Math.random()*this.users.length)
+    const selecteduser = this.users[randomUser]
+    this.users = [selecteduser]
+    console.log('usuarios', this.users)
+  }
 
   ngOnInit(): void {
+    this.randomUsers()
   }
 
 }

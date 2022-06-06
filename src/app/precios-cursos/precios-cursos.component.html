@@ -10,6 +10,15 @@
     </p>
 </div>
 
+<div *ngIf="mostrarCurso; then muestraCurso; else noCurso"></div>
+<div *ngFor = "let user of users">
+    <p> El usuario que tienen permisos son : {{users}}</p>
+</div>
+
+<ng-template #muestraCurso>
+    <p>
+        Tienes permiso para todos los cursos 
+    </p>
 <div id="container">
 
     <div id="curso1">
@@ -25,8 +34,8 @@
          
        <p> 
             B1 
-            15,90€/h
-            Total del curso al año 350€
+            17,90€/h
+            Total del curso al año 450€
          <button>Acceder</button>
        </p>
     </div>
@@ -34,8 +43,8 @@
     <div id="curso3">
         <p> 
          B2 
-         15,90€/h
-         Total del curso al año 350€
+         18,20€/h
+         Total del curso al año 480€
          <button>Acceder</button>
         </p>
     </div>
@@ -43,8 +52,8 @@
     <div id="curso4">
        <p> 
            C1 
-           15,90€/h
-           Total del curso al año 350€
+           19,50€/h
+           Total del curso al año 500€
            <button>Acceder</button>
        </p>
     </div>
@@ -52,13 +61,18 @@
     <div id="curso5">
         <p> 
             C2 
-            15,90€/h
-            Total del curso al año 350€
+            20€/h
+            Total del curso al año 550€
             <button>Acceder</button>
         </p>
     </div>
 
 </div>
+</ng-template>
+
+<ng-template #noCurso>
+    <p>No tienes permiso para ningun curso</p>
+</ng-template>
 
 <app-footer></app-footer>
 
