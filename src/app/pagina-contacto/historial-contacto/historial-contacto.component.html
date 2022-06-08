@@ -1,5 +1,5 @@
 <div class="formulario">
-    <form [formGroup]="form"  action="#" method="get">
+    <!-- <form [formGroup]="form"  action="#" method="get">
         <div *ngFor="let visitante of visitantes">
             {{visitante}}
             <label for="nombre"></label>
@@ -12,8 +12,20 @@
                 {{visitante.mensaje}}
             </textarea>
         </div>    
-    </form>
+    </form> -->
     <!-- <form action="#" method="get" *ngFor="let visitante of visitantes">
         {{visitante}}
     </form> -->
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Mensaje</th>
+        </tr>
+        <tr *ngFor="let visitante of visitantes">
+            <td>{{visitante.nombre}}</td>
+            <td>{{visitante.email}}</td>
+            <td>{{visitante.mensaje}}</td>
+        </tr>
+    </table>
 </div>

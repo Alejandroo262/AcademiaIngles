@@ -12,7 +12,6 @@ export class HistorialContactoComponent implements OnInit {
 
   public form: FormGroup | any;
   public visitantes: any = [];
-  public visitante: any;
 
   constructor(private rest: RestService, private formBuilder: FormBuilder, private http: HttpClient,) { }
 
@@ -32,9 +31,9 @@ export class HistorialContactoComponent implements OnInit {
     //this.form.value;
     )
   
-    .subscribe(respuesta => {
+    .subscribe((respuesta:any) => {
       console.log(respuesta);
-      // this.visitantes = respuesta;
+      this.visitantes = respuesta.data;
       // return this.visitantes;
     })
 
