@@ -94,5 +94,23 @@
 button{
     margin-top: 100px;
     align-items: center;
+    margin-bottom: 1rem;
+    margin-left: 25%;
+    width: 50%;
+    display: block;
+    padding: 0.3rem;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    border: 1px solid #cccccc;
+    background-color: #0c0d0d;
+    border-radius: 1em;
 }
+
+button:hover {
+    cursor: pointer;
+    padding: 0.35rem;
+    color: #0c0d0d;
+    background-color: rgb(255, 255, 255);
+}
+
 
