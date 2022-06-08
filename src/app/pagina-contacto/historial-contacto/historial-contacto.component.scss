@@ -1,0 +1,29 @@
+.formulario {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 4rem;
+    width: 30%;
+    padding: 1em;
+    border: 1px solid #cccccc;
+    border-radius: 1em;
+    display: block;
+
+    input {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        padding: 0.5rem;
+        box-sizing: border-box;
+        border: 1px solid #cccccc;
+        border-radius: 1em;
+
+        #description {
+            padding-bottom: 5rem;
+        }
+    }
+
+    textarea{
+        margin-top: 2rem;
+        width: 100%;
+    }
+}

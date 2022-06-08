@@ -8,12 +8,16 @@
 <div class="datos">
     <div class="formulario">
         <form [formGroup]="form" (submit)="enviarData()" action="#" method="post">
-            <label for="user"></label>
+            <label for="nombre"></label>
             <input formControlName="nombre" type="text" name="nombre" id="nombre" placeholder="Nombre.."/>
             <label for="email"></label>
             <input formControlName="email" type="email" name="email" id="email" placeholder="Email..."/>
             <textarea formControlName="mensaje" placeholder="Escribe el mensaje..." name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-            <button>Enviar</button>
+            <div id="botones">
+                <button (click)="limpiar()" id="borrar">Borrar</button>
+                <button id="historial" [routerLink]="['historial-contacto']">Ver historial</button>
+            </div>
+            <button id="botonEnviar">Enviar</button>   
         </form>
     </div>
 

@@ -1,0 +1,19 @@
+<div class="formulario">
+    <form [formGroup]="form"  action="#" method="get">
+        <div *ngFor="let visitante of visitantes">
+            {{visitante}}
+            <label for="nombre"></label>
+            <input formControlName="nombre" type="text" name="nombre" id="nombre" placeholder="Nombre.."/>
+            {{visitante.nombre}}
+            <label for="email"></label>
+            <input formControlName="email" type="email" name="email" id="email" placeholder="Email..."/>
+            {{visitante.email}}
+            <textarea formControlName="mensaje" placeholder="Escribe el mensaje..." name="mensaje" id="mensaje" cols="30" rows="10">
+                {{visitante.mensaje}}
+            </textarea>
+        </div>    
+    </form>
+    <!-- <form action="#" method="get" *ngFor="let visitante of visitantes">
+        {{visitante}}
+    </form> -->
+</div>

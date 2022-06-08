@@ -10,6 +10,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { PreciosCursosComponent } from './precios-cursos/precios-cursos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HistorialContactoComponent } from './pagina-contacto/historial-contacto/historial-contacto.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MenuComponent,
     PaginaContactoComponent,
     FooterComponent,
-    PreciosCursosComponent
+    PreciosCursosComponent,
+    HistorialContactoComponent
   ],
   imports: [
     BrowserModule,

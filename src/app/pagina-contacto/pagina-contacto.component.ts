@@ -35,4 +35,8 @@ export class PaginaContactoComponent implements OnInit {
     })
   }
 
+  public limpiar() {
+    this.form.reset();
+  }
+
 }

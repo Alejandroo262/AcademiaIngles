@@ -38,7 +38,50 @@ body {
         width: 100%;
     }
 
-    button {
+    #botones {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+
+    #borrar {
+        display: block;
+        padding: 0.3rem;
+        box-sizing: border-box;
+        color: rgb(255, 255, 255);
+        border: 1px solid #cccccc;
+        background-color: #0c0d0d;
+        border-radius: 1em;
+        width: 25%;
+    }
+
+    #borrar:hover {
+        cursor: pointer;
+        padding: 0.35rem;
+        color: #0c0d0d;
+        background-color: rgb(255, 255, 255);
+    }
+
+    #historial {
+        display: block;
+        padding: 0.3rem;
+        box-sizing: border-box;
+        color: rgb(255, 255, 255);
+        border: 1px solid #cccccc;
+        background-color: #0c0d0d;
+        border-radius: 1em;
+        width: 25%;
+    }
+
+    #historial:hover{
+        cursor: pointer;
+        padding: 0.35rem;
+        color: #0c0d0d;
+        background-color: rgb(255, 255, 255);
+    }
+  
+    #botonEnviar {
         margin-top: 2rem;
         margin-bottom: 1rem;
         margin-left: 25%;
@@ -52,7 +95,7 @@ body {
         border-radius: 1em;
     }
 
-    button:hover {
+    #botonEnviar:hover {
         cursor: pointer;
         padding: 0.35rem;
         color: #0c0d0d;
