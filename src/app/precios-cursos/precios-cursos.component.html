@@ -1,110 +1,99 @@
 
-<div id="descripcion">
-    PRECIOS - CURSOS DE INGLES 
-    <p>
-        Consulta los precios de nuestras clases de ingles presenciales y online con profesores nativos y titulados.
-        
-    </p>
-    <p>
-        Las clases son de 60 minutos. No tenemos tasas de inscripcion y el materia didactico esta incluido en el precio.
-    </p>
-</div>
+<div class="imagen_fondo">
 
-<div *ngIf="isMostrarCurso; then muestraCurso; else noCurso"></div>
-<div *ngFor = "let user of users">
-    <p> El usuario que tienen permisos es : {{users}}</p>
-</div>
-
-<ng-template #muestraCurso>
-    <p>
-        Tienes permiso para todos los cursos 
-    </p>
-
-<button (click)="togglePrecios()">{{btnTextPrecios}}</button>
-
-<div id="container" *ngIf="isMostrarPrecios">
-
-    <div id="curso1" >
- 
-        A1/A2
-        15,90€/h
-        Total del curso al año 350€
-
-       <img src="../../../assets/img/libro1.jpg">
-     
-        <button (click)="toggleMostrar()" id="boton">Acceder</button>
-        <div id="mostrar1" *ngIf="isMostrarTenerCurso">{{textTenerCurso}} </div>
-
-        <img src="../../../assets/img/estrellas.png" > 
-
+    <div id="descripcion">
+        PRECIOS - CURSOS DE INGLES 
+        <p>
+            Consulta los precios de nuestras clases de ingles presenciales y online con profesores nativos y titulados.
+        </p>
+        <p>
+            Las clases son de 60 minutos. No tenemos tasas de inscripcion y el materia didactico esta incluido en el precio.
+        </p>
     </div>
 
-    <div id="curso2">
-    
-        B1 
-        17,90€/h
-        Total del curso al año 450€
-
-        <img src="../../../assets/img/libro2.jpg">
-
-        <button (click)="toggleMostrar1()" id="boton1">Acceder</button>
-        <div id="mostrar2" *ngIf="isMostrarTenerCurso1">{{textTenerCurso}} </div>
-
-        <img src="../../../assets/img/estrellas.png">
-       
+    <div *ngIf="isMostrarCurso; then muestraCurso; else noCurso"></div>
+    <div *ngFor = "let user of users">
+        <p> El usuario que tienen permisos es : {{users}}</p>
     </div>
 
-    <div id="curso3">
+    <ng-template #muestraCurso>
+        <p>
+            Tienes permiso para todos los cursos 
+        </p>
+
+    <button (click)="togglePrecios()">{{btnTextPrecios}}</button>
+
+    <div id="container" *ngIf="isMostrarPrecios">
+
+        <div id="curso1" *ngFor = "let info of informacion" >
+            {{informacion}}
+
+        <img src="../../../assets/img/libro1.jpg">
         
-         B2 
-         18,20€/h
-         Total del curso al año 480€
+            <button (click)="toggleMostrar()" id="boton">Acceder</button>
+            <div id="mostrar1" *ngIf="isMostrarTenerCurso">{{textTenerCurso}} </div>
 
-         <img src="../../../assets/img/libro3.jpg">
+            <img src="../../../assets/img/estrellas.png" > 
 
-         <button (click)="toggleMostrar2()" id="boton2">Acceder</button>
-         <div id="mostrar3" *ngIf="isMostrarTenerCurso2">{{textTenerCurso}} </div>
+        </div>
+
+        <div id="curso2" *ngFor = "let info of informacion2">
+            {{informacion2}}
+
+            <img src="../../../assets/img/libro2.jpg">
+
+            <button (click)="toggleMostrar1()" id="boton1">Acceder</button>
+            <div id="mostrar2" *ngIf="isMostrarTenerCurso1">{{textTenerCurso}} </div>
+
+            <img src="../../../assets/img/estrellas.png">
         
-         <img src="../../../assets/img/estrellas.png">
+        </div>
 
-    </div>
+        <div id="curso3" *ngFor = "let info of informacion3">
+            {{informacion3}}
+            
+            <img src="../../../assets/img/libro3.jpg">
 
-    <div id="curso4">
-       
-           C1 
-           19,50€/h
-           Total del curso al año 500€
+            <button (click)="toggleMostrar2()" id="boton2">Acceder</button>
+            <div id="mostrar3" *ngIf="isMostrarTenerCurso2">{{textTenerCurso}} </div>
+            
+            <img src="../../../assets/img/estrellas.png">
 
-           <img src="../../../assets/img/libro4.jpg">
+        </div>
 
-           <button (click)="toggleMostrar3()" id="boton3">Acceder</button>
-           <div id="mostrar4" *ngIf="isMostrarTenerCurso3">{{textTenerCurso}} </div>
+        <div id="curso4" *ngFor = "let info of informacion4">
+            {{informacion4}}
 
-           <img src="../../../assets/img/estrellas.png">
-       
-    </div>
+            <img src="../../../assets/img/libro4.jpg">
 
-    <div id="curso5">
+            <button (click)="toggleMostrar3()" id="boton3">Acceder</button>
+            <div id="mostrar4" *ngIf="isMostrarTenerCurso3">{{textTenerCurso}} </div>
+
+            <img src="../../../assets/img/estrellas.png">
         
-            C2 
-            20€/h
-            Total del curso al año 550€
+        </div>
 
+        <div id="curso5" *ngFor = "let info of informacion5">
+            {{informacion5}}
+  
             <img src="../../../assets/img/libro5.jpg">
 
             <button (click)="toggleMostrar4()" id="boton4">Acceder</button>
             <div id="mostrar5" *ngIf="isMostrarTenerCurso4">{{textTenerCurso}} </div>
-        
-            <img src="../../../assets/img/estrellas.png">
+            
+             <img src="../../../assets/img/estrellas.png">
+             
+        </div>
+
     </div>
 
+    </ng-template>
+
+    <ng-template #noCurso>
+        <p>No tienes permiso para ningun curso</p>
+    </ng-template>
+    
+    <app-footer></app-footer>
+
 </div>
-
-</ng-template>
-
-<ng-template #noCurso>
-    <p>No tienes permiso para ningun curso</p>
-</ng-template>
-
-<app-footer></app-footer>
 

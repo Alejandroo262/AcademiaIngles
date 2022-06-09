@@ -9,6 +9,11 @@ export class PreciosCursosComponent implements OnInit {
 
   public isMostrarCurso: boolean = true;
   public users: string []=[] ;
+  public informacion: string []=[];
+  public informacion2: string []=[];
+  public informacion3: string []=[];
+  public informacion4: string []=[];
+  public informacion5: string []=[];
   public isMostrarPrecios: boolean = false;
   public isMostrarTenerCurso: boolean | undefined ;
   public isMostrarTenerCurso1: boolean | undefined ;
@@ -22,6 +27,11 @@ export class PreciosCursosComponent implements OnInit {
 
   constructor() { 
     this.users = ["Fran", "Santiago", "Alejandro"]
+    this.informacion = ["A1/A2 15,90€/h Total del curso al año 350€"]
+    this.informacion2 = [ "B1 17,90€/h Total del curso al año 450€"]
+    this.informacion3 = ["B2 18,20€/h Total del curso al año 480€"]
+    this.informacion4 = ["C1 19,50€/h Total del curso al año 500€"]
+    this.informacion5 = [" C2 20€/h Total del curso al año 550€"]
   }
 
   public randomUsers():void{
