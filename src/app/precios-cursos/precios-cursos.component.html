@@ -24,53 +24,86 @@
 
 <div id="container" *ngIf="isMostrarPrecios">
 
-    <div id="curso1">
-    <p>
+    <div id="curso1" >
+ 
         A1/A2
         15,90€/h
         Total del curso al año 350€
-       <button>Acceder</button>
-    </p>
+
+       <img src="../../../assets/img/libro1.jpg">
+     
+        <button (click)="toggleMostrar()" id="boton">Acceder</button>
+        <div id="mostrar1" *ngIf="isMostrarTenerCurso">{{textTenerCurso}} </div>
+
+        <img src="../../../assets/img/estrellas.png" > 
+    
+       
     </div>
+
+  
 
     <div id="curso2">
          
-       <p> 
-            B1 
-            17,90€/h
-            Total del curso al año 450€
-         <button>Acceder</button>
-       </p>
+    
+        B1 
+        17,90€/h
+        Total del curso al año 450€
+
+        <img src="../../../assets/img/libro2.jpg">
+
+        <button (click)="toggleMostrar1()" id="boton1">Acceder</button>
+        <div id="mostrar2" *ngIf="isMostrarTenerCurso1">{{textTenerCurso}} </div>
+
+        <img src="../../../assets/img/estrellas.png">
+       
     </div>
 
     <div id="curso3">
-        <p> 
+        
          B2 
          18,20€/h
          Total del curso al año 480€
-         <button>Acceder</button>
-        </p>
+
+         <img src="../../../assets/img/libro3.jpg">
+
+         <button (click)="toggleMostrar2()" id="boton2">Acceder</button>
+         <div id="mostrar3" *ngIf="isMostrarTenerCurso2">{{textTenerCurso}} </div>
+        
+         <img src="../../../assets/img/estrellas.png">
+
     </div>
 
     <div id="curso4">
-       <p> 
+       
            C1 
            19,50€/h
            Total del curso al año 500€
-           <button>Acceder</button>
-       </p>
+
+           <img src="../../../assets/img/libro4.jpg">
+
+           <button (click)="toggleMostrar3()" id="boton3">Acceder</button>
+           <div id="mostrar4" *ngIf="isMostrarTenerCurso3">{{textTenerCurso}} </div>
+
+           <img src="../../../assets/img/estrellas.png">
+       
     </div>
 
     <div id="curso5">
-        <p> 
+        
             C2 
             20€/h
             Total del curso al año 550€
-            <button>Acceder</button>
-        </p>
+
+            <img src="../../../assets/img/libro5.jpg">
+
+            <button (click)="toggleMostrar4()" id="boton4">Acceder</button>
+            <div id="mostrar5" *ngIf="isMostrarTenerCurso4">{{textTenerCurso}} </div>
+        
+            <img src="../../../assets/img/estrellas.png">
     </div>
 
 </div>
+
 </ng-template>
 
 <ng-template #noCurso>
