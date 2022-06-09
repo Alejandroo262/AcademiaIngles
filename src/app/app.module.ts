@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PantallaInicialComponent } from './pantalla-inicial/pantalla-inicial.component';
@@ -11,6 +10,9 @@ import { PreciosCursosComponent } from './precios-cursos/precios-cursos.componen
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HistorialContactoComponent } from './pagina-contacto/historial-contacto/historial-contacto.component';
+import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,10 @@ import { HistorialContactoComponent } from './pagina-contacto/historial-contacto
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    MatButtonModule,
+    BrowserAnimationsModule,
+    MatSliderModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

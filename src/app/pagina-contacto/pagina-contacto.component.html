@@ -14,10 +14,10 @@
             <input formControlName="email" type="email" name="email" id="email" placeholder="Email..."/>
             <textarea formControlName="mensaje" placeholder="Escribe el mensaje..." name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
             <div id="botones">
-                <button (click)="limpiar()" id="borrar">Borrar</button>
-                <button id="historial" [routerLink]="['historial-contacto']">Ver historial</button>
+                <button mat-raised-button class="basic" (click)="limpiar()">Borrar</button>
+                <button mat-raised-button class="basic" [routerLink]="['historial-contacto']">Ver historial</button>
             </div>
-            <button id="botonEnviar">Enviar</button>   
+            <button mat-raised-button class="basic" id="botonEnviar">Enviar</button>   
         </form>
     </div>
 
