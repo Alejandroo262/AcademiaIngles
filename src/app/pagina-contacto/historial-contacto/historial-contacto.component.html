@@ -1,18 +1,18 @@
 <table class="table">
-    <thead class="table-dark">
-      <tr>
-        <th scope="col">Id</th>
-        <th scope="col">Nombre</th>
-        <th scope="col">Email</th>
-        <th scope="col">Mensaje</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let visitante of visitantes">
-        <th scope="row">{{visitante.id}}</th>
-        <td>{{visitante.nombre}}</td>
-        <td>{{visitante.email}}</td>
-        <td>{{visitante.mensaje}}</td>
-      </tr>
-    </tbody>
-  </table>
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Email</th>
+      <th scope="col">Mensaje</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let visitante of visitantes">
+      <th scope="row">{{visitante.id}}</th>
+      <td>{{visitante.nombre}}</td>
+      <td>{{visitante.email}}</td>
+      <td>{{visitante.mensaje}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: 'pagina-contacto', component: PaginaContactoComponent},
   {path: 'pagina-precios', component: PreciosCursosComponent},
   {path: 'pagina-cursos', component: PaginaCursosComponent},
-  {path: 'pagina-login', component: PantallaLoginComponent},
+  {path: 'pantalla-login', component: PantallaLoginComponent},
   {path: 'pagina-contacto/:historial-contacto', component: HistorialContactoComponent}
 ];
 
