@@ -26,9 +26,9 @@
     <div id="container" *ngIf="isMostrarPrecios">
 
         <div id="curso1" *ngFor = "let info of informacion" >
-            {{informacion}}
+            <h4>{{informacion}}</h4>
 
-        <img src="../../../assets/img/libro1.jpg">
+            <img src="../../../assets/img/libro1.jpg">
         
             <button (click)="toggleMostrar()" id="boton">Acceder</button>
             <div id="mostrar1" *ngIf="isMostrarTenerCurso">{{textTenerCurso}} </div>
@@ -38,7 +38,7 @@
         </div>
 
         <div id="curso2" *ngFor = "let info of informacion2">
-            {{informacion2}}
+            <h4>{{informacion2}}</h4>
 
             <img src="../../../assets/img/libro2.jpg">
 
@@ -50,7 +50,7 @@
         </div>
 
         <div id="curso3" *ngFor = "let info of informacion3">
-            {{informacion3}}
+            <h4>{{informacion3}}</h4>
             
             <img src="../../../assets/img/libro3.jpg">
 
@@ -62,7 +62,7 @@
         </div>
 
         <div id="curso4" *ngFor = "let info of informacion4">
-            {{informacion4}}
+            <h4>{{informacion4}}</h4>
 
             <img src="../../../assets/img/libro4.jpg">
 
@@ -74,7 +74,7 @@
         </div>
 
         <div id="curso5" *ngFor = "let info of informacion5">
-            {{informacion5}}
+            <h4>{{informacion5}}</h4>
   
             <img src="../../../assets/img/libro5.jpg">
 

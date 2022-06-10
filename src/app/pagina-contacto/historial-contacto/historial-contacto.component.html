@@ -1,31 +1,18 @@
-<div class="formulario">
-    <!-- <form [formGroup]="form"  action="#" method="get">
-        <div *ngFor="let visitante of visitantes">
-            {{visitante}}
-            <label for="nombre"></label>
-            <input formControlName="nombre" type="text" name="nombre" id="nombre" placeholder="Nombre.."/>
-            {{visitante.nombre}}
-            <label for="email"></label>
-            <input formControlName="email" type="email" name="email" id="email" placeholder="Email..."/>
-            {{visitante.email}}
-            <textarea formControlName="mensaje" placeholder="Escribe el mensaje..." name="mensaje" id="mensaje" cols="30" rows="10">
-                {{visitante.mensaje}}
-            </textarea>
-        </div>    
-    </form> -->
-    <!-- <form action="#" method="get" *ngFor="let visitante of visitantes">
-        {{visitante}}
-    </form> -->
-    <table>
-        <tr>
-            <th>Nombre</th>
-            <th>Email</th>
-            <th>Mensaje</th>
-        </tr>
-        <tr *ngFor="let visitante of visitantes">
-            <td>{{visitante.nombre}}</td>
-            <td>{{visitante.email}}</td>
-            <td>{{visitante.mensaje}}</td>
-        </tr>
-    </table>
-</div>
+<table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Email</th>
+        <th scope="col">Mensaje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let visitante of visitantes">
+        <th scope="row">{{visitante.id}}</th>
+        <td>{{visitante.nombre}}</td>
+        <td>{{visitante.email}}</td>
+        <td>{{visitante.mensaje}}</td>
+      </tr>
+    </tbody>
+  </table>

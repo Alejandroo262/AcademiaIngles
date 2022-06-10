@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder,FormGroup, Validators } from '@angular/forms';
 import { RestService } from '../services/rest.service';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'app-pagina-contacto',
