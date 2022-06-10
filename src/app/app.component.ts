@@ -7,14 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+  Ismenu: boolean = true;
   title: string = 'academiaIngles';
-  dataInicio: string = "Menu de Navegacion"
+  dataInicio: string = "Menu de Navegacion";
+  componentLoaded: string = "No va";
 
 
   public getDataInicio(): string{
     return this.dataInicio
   }
 
+  public setMessage(msg: string): void{
+    this.componentLoaded = msg;
+  }
 
 }
 

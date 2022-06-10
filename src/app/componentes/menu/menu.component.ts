@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -7,11 +7,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  @Input() title : any ;
+  @Input() title : any 
+  @Output() message = new EventEmitter<string>()
 
   constructor() { }
 
   ngOnInit(): void {
+    this.message.emit(" Selecciona para navegar ")
   }
 
 }

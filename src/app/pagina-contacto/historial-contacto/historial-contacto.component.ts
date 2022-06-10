@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { FormBuilder,FormGroup, Validators } from '@angular/forms';
 import { RestService } from '../../services/rest.service';
 import {HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-historial-contacto',
@@ -12,7 +13,6 @@ export class HistorialContactoComponent implements OnInit {
 
   public form: FormGroup | any;
   public visitantes: any = [];
-
   constructor(private rest: RestService, private formBuilder: FormBuilder, private http: HttpClient,) { }
 
   ngOnInit(): void {

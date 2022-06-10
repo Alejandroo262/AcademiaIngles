@@ -5,6 +5,7 @@ import { PaginaContactoComponent } from './pagina-contacto/pagina-contacto.compo
 import { PreciosCursosComponent } from './precios-cursos/precios-cursos.component';
 import { HistorialContactoComponent } from './pagina-contacto/historial-contacto/historial-contacto.component';
 import { PaginaCursosComponent } from './pagina-cursos/pagina-cursos.component';
+import { PantallaLoginComponent } from './pantalla-login/pantalla-login.component';
 
 const routes: Routes = [
   {path: '', component: PantallaInicialComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'pagina-contacto', component: PaginaContactoComponent},
   {path: 'pagina-precios', component: PreciosCursosComponent},
   {path: 'pagina-cursos', component: PaginaCursosComponent},
+  {path: 'pagina-login', component: PantallaLoginComponent},
   {path: 'pagina-contacto/:historial-contacto', component: HistorialContactoComponent}
 ];
 

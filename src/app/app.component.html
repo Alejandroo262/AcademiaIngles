@@ -1,5 +1,8 @@
 
-<app-menu [title]="getDataInicio()"></app-menu>
+<app-menu *ngIf=" Ismenu"
+[title]="getDataInicio()"
+(message)="setMessage($event)"
+></app-menu>
 <router-outlet></router-outlet>
 
 

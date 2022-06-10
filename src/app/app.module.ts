@@ -15,6 +15,7 @@ import { PaginaCursosComponent } from './pagina-cursos/pagina-cursos.component';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PantallaLoginComponent } from './pantalla-login/pantalla-login.component';
 
 
 
@@ -27,7 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     PreciosCursosComponent,
     HistorialContactoComponent,
-    PaginaCursosComponent
+    PaginaCursosComponent,
+    PantallaLoginComponent
   ],
   imports: [
     BrowserModule,
