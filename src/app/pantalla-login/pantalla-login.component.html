@@ -1,4 +1,3 @@
-<!--Original CodePen: https://codepen.io/m2creates/pen/EEvGgW -->
 <div id="back">
     <canvas id="canvas" class="canvas-back"></canvas>
     <div class="backRight">    
@@ -10,13 +9,10 @@
   <div id="slideBox">
     <div class="topLayer">
       
-      
-      
-      <!--Contenido de la izquierda-->
       <div class="left">
         <div class="content">
           <h2>Formulario de registro</h2>
-          <form id="form-signup" method="post" onsubmit="return false;">
+          <form id="form-signup" method="post">
             <div class="form-element form-stack">
               <label for="username-signup" class="form-label">Nombre de usuario</label>
               <input id="username-signup" type="text" name="username">
@@ -29,32 +25,27 @@
               <label for="password-signup" class="form-label">Contraseña</label>
               <input id="password-signup" type="password" name="password">
             </div>
-            <!--Esto lo he puesto yo-->
   
             <div class="form-element form-stack">
               <label for="password-signup-repeat" class="form-label">Vuelva a introducir la contraseña</label>
               <input id="password-signup-repeat" type="password" name="password-repeat">
             </div>
-            <!--Fin de la repetición de password-->
             <div class="form-element form-checkbox">
               <input id="confirm-terms" type="checkbox" name="confirm" value="yes" class="checkbox">
               <label for="confirm-terms">Estoy de acuerdo con los <a href="#">términos y condiciones de uso</a> y la <a href="#">política de privacidad</a> de este sitio.</label>
             </div>
             <div class="form-element form-submit">
               <button id="signUp" class="signup" type="submit" name="signup">Registrarme</button>
-              <button id="goLeft" class="signup off" onclick="limpiarForm();">¿Ya tienes cuenta? Acceder</button> 
+              <button id="goLeft" class="signup off">¿Ya tienes cuenta? Acceder</button> 
             </div>
           </form>
-          <!--Ponga aquí más elementos si lo desea-->
         </div>
       </div>
     
-      
-      <!--Contenido de la derecha-->
       <div class="right">
         <div class="content">
           <h2>Iniciar sesión</h2>
-          <form id="form-login" method="post" onsubmit="return false;">
+          <form id="form-login" method="post">
             <div class="form-element form-stack">
               <label for="username-login" class="form-label">Nombre de usuario</label>
               <input id="username-login" type="text" name="username">
@@ -65,10 +56,9 @@
             </div>
             <div class="form-element form-submit">
               <button id="logIn" class="login" type="submit" name="login">Acceder</button>
-              <button id="goRight" class="login off" name="signup" onclick="limpiarForm();">Registrarse</button>
+              <button id="goRight" class="login off" name="signup">Registrarse</button>
             </div>
           </form>
-          <!--Ponga aquí más elementos si lo desea-->
         </div>
       </div>
   
@@ -76,23 +66,3 @@
   
   </div>
   
-  <!-- 
-  
-  Remixed from "Sliding Login Form" Codepen by
-  C-Rodg (github.com/C-Rodg)
-  https://codepen.io/crodg/pen/yNKxej
-  
-  Remixed from "Paper.js - Animated Shapes Header" Codepen by
-  Connor Hubeny (@cooper_hu)
-  https://codepen.io/cooper_hu/pen/ybxoev
-  
-  Custom Checkbox based on the blog post by
-  Mik Ted (@inserthtml):
-  https://www.inserthtml.com/2012/06/custom-form-radio-checkbox/
-  
-  HTML5 Form Validation based on the blog post by
-  Thoriq Firdaus (@tfirdaus):
-  https://webdesign.tutsplus.com/tutorials/
-  html5-form-validation-with-the-pattern-attribute--cms-25145
-  
-  -->
