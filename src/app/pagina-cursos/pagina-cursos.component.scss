@@ -1,4 +1,4 @@
-button{
+#presencial{
     margin-top: 50px;
     align-items: center;
     margin-bottom: 1rem;
@@ -13,14 +13,230 @@ button{
     border-radius: 1em;
 }
 
-button:hover {
+#presencial:hover{
     cursor: pointer;
     padding: 0.35rem;
     color: #0c0d0d;
     background-color: rgb(255, 255, 255);
 }
 
+#online{
+    margin-top: 50px;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-left: 30%;
+    width: 40%;
+    display: block;
+    padding: 0.3rem;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    border: 1px solid #cccccc;
+    background-color: #0c0d0d;
+    border-radius: 1em;
+}
+
+#online:hover{
+    cursor: pointer;
+    padding: 0.35rem;
+    color: #0c0d0d;
+    background-color: rgb(255, 255, 255);
+}
+
+
 #container{
     display: grid;
     grid-template-columns: 50% 50% ;
+ }
+
+ #container1{
+    padding-left: 17%; 
+ }
+
+ #boton1{
+    margin-top: 20px;
+    background-color: #0c0d0d;
+    color: rgb(255, 255, 255);
+    border-radius: 1em;
+    border: 1px solid #cccccc;
+ }
+
+ #boton2{
+    margin-top: 20px;
+    background-color: #0c0d0d;
+    color: rgb(255, 255, 255);
+    border-radius: 1em;
+    border: 1px solid #cccccc;
+ }
+
+ #boton3{
+    margin-top: 20px;
+    background-color: #0c0d0d;
+    color: rgb(255, 255, 255);
+    border-radius: 1em;
+    border: 1px solid #cccccc;
+ }
+
+ #boton4{
+    margin-top: 20px;
+    background-color: #0c0d0d;
+    color: rgb(255, 255, 255);
+    border-radius: 1em;
+    border: 1px solid #cccccc;
+ }
+
+ #boton5{
+    margin-top: 20px;
+    background-color: #0c0d0d;
+    color: rgb(255, 255, 255);
+    border-radius: 1em;
+    border: 1px solid #cccccc;
+ }
+
+ #boton6{
+    margin-top: 20px;
+    background-color: #0c0d0d;
+    color: rgb(255, 255, 255);
+    border-radius: 1em;
+    border: 1px solid #cccccc;
+ }
+
+ #boton7{
+    margin-top: 20px;
+    background-color: #0c0d0d;
+    color: rgb(255, 255, 255);
+    border-radius: 1em;
+    border: 1px solid #cccccc;
+ }
+
+ #boton8{
+    margin-top: 20px;
+    background-color: #0c0d0d;
+    color: rgb(255, 255, 255);
+    border-radius: 1em;
+    border: 1px solid #cccccc;
+ }
+
+ #boton9{
+    margin-top: 20px;
+    background-color: #0c0d0d;
+    color: rgb(255, 255, 255);
+    border-radius: 1em;
+    border: 1px solid #cccccc;
+ }
+
+ #boton10{
+    margin-top: 20px;
+    background-color: #0c0d0d;
+    color: rgb(255, 255, 255);
+    border-radius: 1em;
+    border: 1px solid #cccccc;
+ }
+
+ #boton11{
+    margin-top: 20px;
+    background-color: #0c0d0d;
+    color: rgb(255, 255, 255);
+    border-radius: 1em;
+    border: 1px solid #cccccc;
+ }
+
+ #boton12{
+    margin-top: 20px;
+    background-color: #0c0d0d;
+    color: rgb(255, 255, 255);
+    border-radius: 1em;
+    border: 1px solid #cccccc;
+ }
+
+ #boton1:hover{
+    cursor: pointer;
+    padding: 0.35rem;
+    color: #0c0d0d;
+    background-color: rgb(255, 255, 255);
+ }
+
+ #boton2:hover{
+    cursor: pointer;
+    padding: 0.35rem;
+    color: #0c0d0d;
+    background-color: rgb(255, 255, 255);
+ }
+ 
+ #boton3:hover{
+    cursor: pointer;
+    padding: 0.35rem;
+    color: #0c0d0d;
+    background-color: rgb(255, 255, 255);
+ }
+ 
+ #boton4:hover{
+    cursor: pointer;
+    padding: 0.35rem;
+    color: #0c0d0d;
+    background-color: rgb(255, 255, 255);
+ }
+
+ #boton5:hover{
+    cursor: pointer;
+    padding: 0.35rem;
+    color: #0c0d0d;
+    background-color: rgb(255, 255, 255);
+ }
+ #boton6:hover{
+    cursor: pointer;
+    padding: 0.35rem;
+    color: #0c0d0d;
+    background-color: rgb(255, 255, 255);
+ }
+
+ #boton7:hover{
+    cursor: pointer;
+    padding: 0.35rem;
+    color: #0c0d0d;
+    background-color: rgb(255, 255, 255);
+ }
+
+ #boton8:hover{
+    cursor: pointer;
+    padding: 0.35rem;
+    color: #0c0d0d;
+    background-color: rgb(255, 255, 255);
+ }
+
+ #boton9:hover{
+    cursor: pointer;
+    padding: 0.35rem;
+    color: #0c0d0d;
+    background-color: rgb(255, 255, 255);
+ }
+
+ #boton10:hover{
+    cursor: pointer;
+    padding: 0.35rem;
+    color: #0c0d0d;
+    background-color: rgb(255, 255, 255);
+ }
+
+ #boton11:hover{
+    cursor: pointer;
+    padding: 0.35rem;
+    color: #0c0d0d;
+    background-color: rgb(255, 255, 255);
+ }
+
+ #boton12:hover{
+    cursor: pointer;
+    padding: 0.35rem;
+    color: #0c0d0d;
+    background-color: rgb(255, 255, 255);
+ }
+
+
+ #cursoPresencial{
+     padding-left: 100px;
+     
+ }
+
+ #cursosOnline{
+     padding-left: 220px;
  }

@@ -7,16 +7,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaginaCursosComponent implements OnInit {
 
+ 
   public IsMostrarCursosPresencial: boolean = false
   public IsMostrarCursosOnline: boolean = false
   public btnTextPresencial: string = ""
   public btnTextOnline: string = ""
+  public descripcion: string [] = []
+  public descripcion1: string [] = []
+  public descripcion2: string [] = []
+  public descripcion3: string [] = []
+  public descripcion4: string [] = []
+  public descripcion5: string [] = []
   private textCursosPresencialShow: string = "Mostrar Cursos Presenciales"
   private textCursosPresencialHide: string = "Ocultar Precios Presenciales"
   private textCursosOnlineShow: string = "Mostrar Cursos Online"
   private textCursosOnlineHide: string = "Ocultar Precios Online"
 
-  constructor() { }
+  constructor() { 
+    this.descripcion = ["A1 para acceder al contenido pulse el boton "]
+    this.descripcion1 = ["A2 para acceder al contenido pulse el boton"]
+    this.descripcion2 = ["B1 para acceder al contenido pulse el boton"]
+    this.descripcion3 = ["B2 para acceder al contenido pulse el boton"]
+    this.descripcion4 = ["C1 para acceder al contenido pulse el boton"]
+    this.descripcion5 = ["C2 para acceder al contenido pulse el boton"]
+  }
 
   public toggleCursoPresencial():void{
     this.IsMostrarCursosPresencial = !this.IsMostrarCursosPresencial
