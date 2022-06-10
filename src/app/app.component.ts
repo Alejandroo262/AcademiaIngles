@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'academiaIngles';
+
+  title: string = 'academiaIngles';
+  dataInicio: string = "Menu de Navegacion"
+
+
+  public getDataInicio(): string{
+    return this.dataInicio
+  }
+
+
 }
+
+

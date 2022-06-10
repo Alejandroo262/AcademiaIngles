@@ -11,6 +11,7 @@ import { PreciosCursosComponent } from './precios-cursos/precios-cursos.componen
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HistorialContactoComponent } from './pagina-contacto/historial-contacto/historial-contacto.component';
+import { PaginaCursosComponent } from './pagina-cursos/pagina-cursos.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HistorialContactoComponent } from './pagina-contacto/historial-contacto
     PaginaContactoComponent,
     FooterComponent,
     PreciosCursosComponent,
-    HistorialContactoComponent
+    HistorialContactoComponent,
+    PaginaCursosComponent
   ],
   imports: [
     BrowserModule,
