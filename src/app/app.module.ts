@@ -23,10 +23,7 @@ import { CursoDetalleC1Component } from './curso-detalle-c1/curso-detalle-c1.com
 import { CursoDetalleC1semiComponent } from './curso-detalle-c1semi/curso-detalle-c1semi.component';
 import { CursoDetalleC2Component } from './curso-detalle-c2/curso-detalle-c2.component';
 import { CursoDetalleC2semiComponent } from './curso-detalle-c2semi/curso-detalle-c2semi.component';
-//import { PantallaLoginComponent } from './pantalla-login/pantalla-login.component';
-
-
-
+import { PantallaLoginComponent } from './pantalla-login/pantalla-login.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +45,7 @@ import { CursoDetalleC2semiComponent } from './curso-detalle-c2semi/curso-detall
     CursoDetalleC1semiComponent,
     CursoDetalleC2Component,
     CursoDetalleC2semiComponent,
-   // PantallaLoginComponent
+    PantallaLoginComponent,
   ],
   imports: [
     BrowserModule,
