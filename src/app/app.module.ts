@@ -12,20 +12,19 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HistorialContactoComponent } from './pagina-contacto/historial-contacto/historial-contacto.component';
 import { PaginaCursosComponent } from './pagina-cursos/pagina-cursos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PantallaLoginComponent } from './pantalla-login/pantalla-login.component';
 import { MatButtonModule } from '@angular/material/button';
 import { CursoDetalleA1Component } from './curso-detalle-a1/curso-detalle-a1.component';
 import { CursoDetalleA1semiComponent } from './curso-detalle-a1semi/curso-detalle-a1semi.component';
 import { CursoDetalleA2Component } from './curso-detalle-a2/curso-detalle-a2.component';
 import { CursoDetalleA2semiComponent } from './curso-detalle-a2semi/curso-detalle-a2semi.component';
-import { CursoDetalleA3Component } from './curso-detalle-a3/curso-detalle-a3.component';
-import { CursoDetalleA3semiComponent } from './curso-detalle-a3semi/curso-detalle-a3semi.component';
 import { CursoDetalleB1Component } from './curso-detalle-b1/curso-detalle-b1.component';
 import { CursoDetalleB2semiComponent } from './curso-detalle-b2semi/curso-detalle-b2semi.component';
 import { CursoDetalleC1Component } from './curso-detalle-c1/curso-detalle-c1.component';
 import { CursoDetalleC1semiComponent } from './curso-detalle-c1semi/curso-detalle-c1semi.component';
 import { CursoDetalleC2Component } from './curso-detalle-c2/curso-detalle-c2.component';
 import { CursoDetalleC2semiComponent } from './curso-detalle-c2semi/curso-detalle-c2semi.component';
+//import { PantallaLoginComponent } from './pantalla-login/pantalla-login.component';
+
 
 
 
@@ -39,19 +38,17 @@ import { CursoDetalleC2semiComponent } from './curso-detalle-c2semi/curso-detall
     PreciosCursosComponent,
     HistorialContactoComponent,
     PaginaCursosComponent,
-    PantallaLoginComponent,
     CursoDetalleA1Component,
     CursoDetalleA1semiComponent,
     CursoDetalleA2Component,
     CursoDetalleA2semiComponent,
-    CursoDetalleA3Component,
-    CursoDetalleA3semiComponent,
     CursoDetalleB1Component,
     CursoDetalleB2semiComponent,
     CursoDetalleC1Component,
     CursoDetalleC1semiComponent,
     CursoDetalleC2Component,
-    CursoDetalleC2semiComponent
+    CursoDetalleC2semiComponent,
+   // PantallaLoginComponent
   ],
   imports: [
     BrowserModule,
