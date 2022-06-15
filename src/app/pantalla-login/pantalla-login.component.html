@@ -1,71 +1,11 @@
-<div id="back">
-    <canvas id="canvas" class="canvas-back"></canvas>
-    <div class="backRight">    
-    </div>
-    <div class="backLeft">
-    </div>
+<div class="login-page">
+  <div class="form">
+    <form class="login-form">
+      <input type="text" placeholder="Nombre"/>
+      <input type="text" placeholder="Email Address"/>
+      <input type="password" placeholder="Password"/>
+      <button [routerLink]="['pagina-cursos']">login</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
   </div>
-  
-  <div id="slideBox">
-    <div class="topLayer">
-      
-      <div class="left">
-        <div class="content">
-          <h2>Formulario de registro</h2>
-          <form>
-            <div class="form-element form-stack">
-              <label for="username-signup" class="form-label">Nombre de usuario</label>
-              <input id="username-signup" type="text" name="username">
-            </div>
-            <div class="form-element form-stack">
-              <label for="email" class="form-label">Correo electrónico</label>
-              <input id="email" type="email" name="email">
-            </div>
-            <div class="form-element form-stack">
-              <label for="password-signup" class="form-label">Contraseña</label>
-              <input id="password-signup" type="password" name="password">
-            </div>
-  
-            <div class="form-element form-stack">
-              <label for="password-signup-repeat" class="form-label">Vuelva a introducir la contraseña</label>
-              <input id="password-signup-repeat" type="password" name="password-repeat">
-            </div>
-            <div class="form-element form-checkbox">
-              <input id="confirm-terms" type="checkbox" name="confirm" value="yes" class="checkbox">
-              <label for="confirm-terms">Estoy de acuerdo con los <a href="#">términos y condiciones de uso</a> y la <a href="#">política de privacidad</a> de este sitio.</label>
-            </div>
-            <div class="form-element form">
-              <button id="signUp" class="signup" name="signup">Registrarme</button>
-              <button id="goLeft" class="signup off">¿Ya tienes cuenta? Acceder</button> 
-            </div>
-          </form>
-        </div>
-      </div>
-    
-      <div class="right">
-        <div class="content">
-          <h2>Iniciar sesión</h2>
-          <form id="form-login">
-            <div class="form-element form-stack">
-              <label for="username-login" class="form-label">Nombre de usuario</label>
-              <input id="username-login" type="text" name="username">
-            </div>
-            <div class="form-element form-stack">
-              <label for="password-login" class="form-label">Contraseña</label>
-              <input id="password-login" type="password" name="password">
-            </div>
-            <div class="form-element form">
-              <a [routerLink]="['pagina-cursos']" class="manteka" (click)="mostrar()"><button>Acceder</button></a>
-              <button id="goRight" class="login off" name="signup">Registrarse</button>
-            </div>
-            <div *ngIf="mostrarTexto">
-                {{acceder}}
-            </div>
-          </form>
-        </div>
-      </div>
-  
-    </div>
-  
-  </div>
-  
+</div>

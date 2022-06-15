@@ -7,16 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PantallaLoginComponent implements OnInit {
 
-  public acceder:string = "Ya estas logeado";
-  public mostrarTexto:boolean | undefined;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  public mostrar(){
-    this.mostrarTexto = true;
-  }
+ 
 
 }
