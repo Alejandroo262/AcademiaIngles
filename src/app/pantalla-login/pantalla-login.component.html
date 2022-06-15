@@ -55,7 +55,7 @@
               <input id="password-login" type="password" name="password">
             </div>
             <div class="form-element form">
-              <a [routerLink]="['pagina-cursos']" class="manteka" (click)="mostrar()"><button>Acceder</button></a>
+              <a class="estilo" (click)="mostrar()"><button [routerLink]="['pagina-cursos']">Acceder</button></a>
               <button id="goRight" class="login off" name="signup">Registrarse</button>
             </div>
             <div *ngIf="mostrarTexto">
