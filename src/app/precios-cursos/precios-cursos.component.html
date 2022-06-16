@@ -13,12 +13,12 @@
 
     <div *ngIf="isMostrarCurso; then muestraCurso; else noCurso"></div>
     <div *ngFor = "let user of users">
-        <p> El usuario que tienen permisos es : {{users}}</p>
+        <!-- <p> El usuario que tienen permisos es : {{users}}</p> -->
     </div>
 
     <ng-template #muestraCurso>
         <p>
-            Tienes permiso para todos los cursos 
+            <!-- Tienes permiso para todos los cursos  -->
         </p>
 
     <button (click)="togglePrecios()">{{btnTextPrecios}}</button>
