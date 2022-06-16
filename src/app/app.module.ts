@@ -45,7 +45,7 @@ import { PantallaLoginComponent } from './pantalla-login/pantalla-login.componen
     CursoDetalleC1semiComponent,
     CursoDetalleC2Component,
     CursoDetalleC2semiComponent,
-    PantallaLoginComponent,
+    PantallaLoginComponent
   ],
   imports: [
     BrowserModule,
